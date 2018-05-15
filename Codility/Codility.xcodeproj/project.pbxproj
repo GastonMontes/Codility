@@ -13,6 +13,8 @@
 		AB08F21020ABA3E600909334 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB08F20F20ABA3E600909334 /* Assets.xcassets */; };
 		AB08F21320ABA3E600909334 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB08F21120ABA3E600909334 /* LaunchScreen.storyboard */; };
 		AB08F21E20ABA3E700909334 /* CodilityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB08F21D20ABA3E700909334 /* CodilityTests.swift */; };
+		AB08F22920ABA46100909334 /* Int+BinaryGap.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB08F22820ABA46100909334 /* Int+BinaryGap.swift */; };
+		AB08F22A20ABA46100909334 /* Int+BinaryGap.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB08F22820ABA46100909334 /* Int+BinaryGap.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,7 @@
 		AB08F21920ABA3E700909334 /* CodilityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodilityTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB08F21D20ABA3E700909334 /* CodilityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodilityTests.swift; sourceTree = "<group>"; };
 		AB08F21F20ABA3E700909334 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB08F22820ABA46100909334 /* Int+BinaryGap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+BinaryGap.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +86,7 @@
 				AB08F20F20ABA3E600909334 /* Assets.xcassets */,
 				AB08F21120ABA3E600909334 /* LaunchScreen.storyboard */,
 				AB08F21420ABA3E600909334 /* Info.plist */,
+				AB08F22820ABA46100909334 /* Int+BinaryGap.swift */,
 			);
 			path = Codility;
 			sourceTree = "<group>";
@@ -200,6 +204,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB08F20B20ABA3E600909334 /* ViewController.swift in Sources */,
+				AB08F22920ABA46100909334 /* Int+BinaryGap.swift in Sources */,
 				AB08F20920ABA3E600909334 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -209,6 +214,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB08F21E20ABA3E700909334 /* CodilityTests.swift in Sources */,
+				AB08F22A20ABA46100909334 /* Int+BinaryGap.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

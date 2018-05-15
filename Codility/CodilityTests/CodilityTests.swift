@@ -10,27 +10,13 @@ import XCTest
 @testable import Codility
 
 class CodilityTests: XCTestCase {
-    
-    override func setUp() {
-        super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    // MARK: - Binary gap testing.
+    func testBinaryGapFunction() {
+        XCTAssertTrue(9.binaryGap() == 2)
+        XCTAssertTrue(529.binaryGap() == 4)
+        XCTAssertTrue(20.binaryGap() == 1)
+        XCTAssertTrue(15.binaryGap() == 0)
+        XCTAssertTrue(1041.binaryGap() == 5)
+        XCTAssertTrue(13.binaryGap() == 1)
     }
-    
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
-    }
-    
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
-    
 }
