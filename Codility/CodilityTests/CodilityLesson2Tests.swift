@@ -9,10 +9,22 @@
 import XCTest
 
 class CodilityLesson2Tests: XCTestCase {
+    // MARK: - Cyclic rotation test.
     func testArrayRotation() {
-//        XCTAssertEqual(Array.cyclicRotation(array: [3, 8, 9, 7, 6], rotations: 1), [6, 3, 8, 9, 7])
-//        XCTAssertEqual(Array.cyclicRotation(array: [3, 8, 9, 7, 6], rotations: 3), [9, 7, 6, 3, 8])
-//        XCTAssertEqual(Array.cyclicRotation(array: [0, 0, 0], rotations: 1), [0, 0, 0])
-//        XCTAssertEqual(Array.cyclicRotation(array: [1, 2, 3, 4], rotations: 4), [1, 2, 3, 4])
+        XCTAssertEqual([3, 8, 9, 7, 6].arrayCyclicRotation(withRotations: 0), [3, 8, 9, 7, 6])
+        XCTAssertEqual([3, 8, 9, 7, 6].arrayCyclicRotation(withRotations: 1), [6, 3, 8, 9, 7])
+        XCTAssertEqual([3, 8, 9, 7, 6].arrayCyclicRotation(withRotations: 2), [7, 6, 3, 8, 9])
+        XCTAssertEqual([3, 8, 9, 7, 6].arrayCyclicRotation(withRotations: 3), [9, 7, 6, 3, 8])
+        XCTAssertEqual([3, 8, 9, 7, 6].arrayCyclicRotation(withRotations: 4), [8, 9, 7, 6, 3])
+        XCTAssertEqual([3, 8, 9, 7, 6].arrayCyclicRotation(withRotations: 5), [3, 8, 9, 7, 6])
+        XCTAssertEqual([3, 8, 9, 7, 6].arrayCyclicRotation(withRotations: 6), [6, 3, 8, 9, 7])
+        XCTAssertEqual([3, 8, 9, 7, 6].arrayCyclicRotation(withRotations: 7), [7, 6, 3, 8, 9])
+        XCTAssertEqual([3, 8, 9, 7, 6].arrayCyclicRotation(withRotations: 8), [9, 7, 6, 3, 8])
+        XCTAssertEqual([3, 8, 9, 7, 6].arrayCyclicRotation(withRotations: 9), [8, 9, 7, 6, 3])
+        XCTAssertEqual([3, 8, 9, 7, 6].arrayCyclicRotation(withRotations: 10), [3, 8, 9, 7, 6])
+        XCTAssertEqual([3, 8, 9, 7, 6].arrayCyclicRotation(withRotations: 50), [3, 8, 9, 7, 6])
+        XCTAssertEqual([0, 0, 0].arrayCyclicRotation(withRotations: 1), [0, 0, 0])
+        XCTAssertEqual([1, 2, 3, 4].arrayCyclicRotation(withRotations: 4), [1, 2, 3, 4])
+        XCTAssertEqual([].arrayCyclicRotation(withRotations: 4), [])
     }
 }

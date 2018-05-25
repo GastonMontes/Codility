@@ -29,8 +29,6 @@ extension Int {
                 
                 gapCount = 0
             }
-            
-            print(numberToDivide)
         }
         
         return binaryGap
