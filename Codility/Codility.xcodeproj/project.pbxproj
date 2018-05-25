@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		380D8FA820B8C3560052EADE /* CodilityExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380D8FA720B8C3560052EADE /* CodilityExampleTests.swift */; };
+		380D8FAA20B8C3DA0052EADE /* CodilityLesson1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380D8FA920B8C3DA0052EADE /* CodilityLesson1Tests.swift */; };
+		380D8FAC20B8C3FD0052EADE /* CodilityLesson2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380D8FAB20B8C3FD0052EADE /* CodilityLesson2Tests.swift */; };
 		380FB56820AF933D00EB0818 /* ReverseString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380FB56520AF933D00EB0818 /* ReverseString.swift */; };
 		380FB56920AF933D00EB0818 /* MinPositiveIntegerInArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380FB56620AF933D00EB0818 /* MinPositiveIntegerInArray.swift */; };
 		380FB56A20AF933D00EB0818 /* NestedParentheses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380FB56720AF933D00EB0818 /* NestedParentheses.swift */; };
@@ -15,7 +18,6 @@
 		AB08F20E20ABA3E600909334 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB08F20C20ABA3E600909334 /* Main.storyboard */; };
 		AB08F21020ABA3E600909334 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB08F20F20ABA3E600909334 /* Assets.xcassets */; };
 		AB08F21320ABA3E600909334 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB08F21120ABA3E600909334 /* LaunchScreen.storyboard */; };
-		AB08F21E20ABA3E700909334 /* CodilityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB08F21D20ABA3E700909334 /* CodilityTests.swift */; };
 		AB08F22920ABA46100909334 /* Int+BinaryGap.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB08F22820ABA46100909334 /* Int+BinaryGap.swift */; };
 		AB08F22A20ABA46100909334 /* Int+BinaryGap.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB08F22820ABA46100909334 /* Int+BinaryGap.swift */; };
 /* End PBXBuildFile section */
@@ -31,6 +33,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		380D8FA720B8C3560052EADE /* CodilityExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodilityExampleTests.swift; sourceTree = "<group>"; };
+		380D8FA920B8C3DA0052EADE /* CodilityLesson1Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodilityLesson1Tests.swift; sourceTree = "<group>"; };
+		380D8FAB20B8C3FD0052EADE /* CodilityLesson2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodilityLesson2Tests.swift; sourceTree = "<group>"; };
 		380FB56520AF933D00EB0818 /* ReverseString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReverseString.swift; sourceTree = "<group>"; };
 		380FB56620AF933D00EB0818 /* MinPositiveIntegerInArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinPositiveIntegerInArray.swift; sourceTree = "<group>"; };
 		380FB56720AF933D00EB0818 /* NestedParentheses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NestedParentheses.swift; sourceTree = "<group>"; };
@@ -42,7 +47,6 @@
 		AB08F21220ABA3E600909334 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AB08F21420ABA3E600909334 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB08F21920ABA3E700909334 /* CodilityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodilityTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		AB08F21D20ABA3E700909334 /* CodilityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodilityTests.swift; sourceTree = "<group>"; };
 		AB08F21F20ABA3E700909334 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB08F22820ABA46100909334 /* Int+BinaryGap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+BinaryGap.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -103,8 +107,10 @@
 		AB08F21C20ABA3E700909334 /* CodilityTests */ = {
 			isa = PBXGroup;
 			children = (
-				AB08F21D20ABA3E700909334 /* CodilityTests.swift */,
 				AB08F21F20ABA3E700909334 /* Info.plist */,
+				380D8FA720B8C3560052EADE /* CodilityExampleTests.swift */,
+				380D8FA920B8C3DA0052EADE /* CodilityLesson1Tests.swift */,
+				380D8FAB20B8C3FD0052EADE /* CodilityLesson2Tests.swift */,
 			);
 			path = CodilityTests;
 			sourceTree = "<group>";
@@ -225,7 +231,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB08F21E20ABA3E700909334 /* CodilityTests.swift in Sources */,
+				380D8FA820B8C3560052EADE /* CodilityExampleTests.swift in Sources */,
+				380D8FAC20B8C3FD0052EADE /* CodilityLesson2Tests.swift in Sources */,
+				380D8FAA20B8C3DA0052EADE /* CodilityLesson1Tests.swift in Sources */,
 				AB08F22A20ABA46100909334 /* Int+BinaryGap.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -372,6 +380,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T7S5QCJVVG;
 				INFOPLIST_FILE = Codility/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = GM.Codility;
@@ -386,6 +395,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T7S5QCJVVG;
 				INFOPLIST_FILE = Codility/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = GM.Codility;

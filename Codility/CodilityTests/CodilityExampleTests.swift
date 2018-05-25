@@ -1,16 +1,15 @@
 //
-//  CodilityTests.swift
+//  CodilityExampleTests.swift
 //  CodilityTests
 //
-//  Created by Gaston Montes on 5/15/18.
+//  Created by Gaston Montes on 25/05/2018.
 //  Copyright © 2018 Gaston Montes. All rights reserved.
 //
 
 import XCTest
 @testable import Codility
 
-class CodilityTests: XCTestCase {
-    // MARK: - Binary gap testing.
+class CodilityExampleTests: XCTestCase {
     func testReverseString() {
         XCTAssertTrue(canReverseString("la concha de tu hermana all boys"))
         XCTAssertEqual(reverseString("la concha de tu hermana all boys"), "syob lla anamreh ut ed ahcnoc al")
@@ -164,14 +163,5 @@ class CodilityTests: XCTestCase {
         XCTAssertEqual(minPositiveIntegerNotIncludedIn7(integersList: [2, 3, 7, 6, 8, -1, -10, 15]), 1)
         XCTAssertEqual(minPositiveIntegerNotIncludedIn7(integersList: [2, 3, -7, 6, 8, 1, -10, 15]), 4)
         XCTAssertEqual(minPositiveIntegerNotIncludedIn7(integersList: [1, 1, 0, -1, -2]), 2)
-    }
-
-    func testBinaryGapFunction() {
-        XCTAssertTrue(9.binaryGap() == 2)
-        XCTAssertTrue(529.binaryGap() == 4)
-        XCTAssertTrue(20.binaryGap() == 1)
-        XCTAssertTrue(15.binaryGap() == 0)
-        XCTAssertTrue(1041.binaryGap() == 5)
-        XCTAssertTrue(13.binaryGap() == 1)
     }
 }
