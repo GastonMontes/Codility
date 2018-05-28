@@ -14,6 +14,7 @@
 		380FB56820AF933D00EB0818 /* ReverseString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380FB56520AF933D00EB0818 /* ReverseString.swift */; };
 		380FB56920AF933D00EB0818 /* MinPositiveIntegerInArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380FB56620AF933D00EB0818 /* MinPositiveIntegerInArray.swift */; };
 		380FB56A20AF933D00EB0818 /* NestedParentheses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380FB56720AF933D00EB0818 /* NestedParentheses.swift */; };
+		38C1838820B8D4AD0065112A /* Array+Odd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C1838720B8D4AD0065112A /* Array+Odd.swift */; };
 		AB08F20920ABA3E600909334 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB08F20820ABA3E600909334 /* AppDelegate.swift */; };
 		AB08F20B20ABA3E600909334 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB08F20A20ABA3E600909334 /* ViewController.swift */; };
 		AB08F20E20ABA3E600909334 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB08F20C20ABA3E600909334 /* Main.storyboard */; };
@@ -41,6 +42,7 @@
 		380FB56520AF933D00EB0818 /* ReverseString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReverseString.swift; sourceTree = "<group>"; };
 		380FB56620AF933D00EB0818 /* MinPositiveIntegerInArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinPositiveIntegerInArray.swift; sourceTree = "<group>"; };
 		380FB56720AF933D00EB0818 /* NestedParentheses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NestedParentheses.swift; sourceTree = "<group>"; };
+		38C1838720B8D4AD0065112A /* Array+Odd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Odd.swift"; sourceTree = "<group>"; };
 		AB08F20520ABA3E600909334 /* Codility.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Codility.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB08F20820ABA3E600909334 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB08F20A20ABA3E600909334 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				AB08F21420ABA3E600909334 /* Info.plist */,
 				AB08F22820ABA46100909334 /* Int+BinaryGap.swift */,
 				380D8FAD20B8C5C90052EADE /* Array+Rotation.swift */,
+				38C1838720B8D4AD0065112A /* Array+Odd.swift */,
 			);
 			path = Codility;
 			sourceTree = "<group>";
@@ -224,6 +227,7 @@
 				AB08F20B20ABA3E600909334 /* ViewController.swift in Sources */,
 				380FB56A20AF933D00EB0818 /* NestedParentheses.swift in Sources */,
 				380FB56820AF933D00EB0818 /* ReverseString.swift in Sources */,
+				38C1838820B8D4AD0065112A /* Array+Odd.swift in Sources */,
 				AB08F22920ABA46100909334 /* Int+BinaryGap.swift in Sources */,
 				380D8FAE20B8C5C90052EADE /* Array+Rotation.swift in Sources */,
 				380FB56920AF933D00EB0818 /* MinPositiveIntegerInArray.swift in Sources */,

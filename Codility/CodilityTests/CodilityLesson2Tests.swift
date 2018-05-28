@@ -27,4 +27,19 @@ class CodilityLesson2Tests: XCTestCase {
         XCTAssertEqual([1, 2, 3, 4].arrayCyclicRotation(withRotations: 4), [1, 2, 3, 4])
         XCTAssertEqual([].arrayCyclicRotation(withRotations: 4), [])
     }
+    
+    // MARK: - Test unpaired element.
+    func testUnpairedElement() {
+        XCTAssertEqual([9, 3, 9, 3, 9, 7, 9].arrayUnpairedElement(), 7)
+        XCTAssertEqual([1, 1, 3].arrayUnpairedElement(), 3)
+        XCTAssertEqual([1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2].arrayUnpairedElement(), 2)
+        XCTAssertEqual([1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 5].arrayUnpairedElement(), 5)
+        XCTAssertEqual([1, 1, 1, 5, 5].arrayUnpairedElement(), 1)
+        
+        XCTAssertEqual([9, 3, 9, 3, 9, 7, 9].arrayUnpairedElement2(), 7)
+        XCTAssertEqual([1, 1, 3].arrayUnpairedElement2(), 3)
+        XCTAssertEqual([1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2].arrayUnpairedElement2(), 2)
+        XCTAssertEqual([1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 5].arrayUnpairedElement2(), 5)
+        XCTAssertEqual([1, 1, 1, 5, 5].arrayUnpairedElement2(), 1)
+    }
 }
