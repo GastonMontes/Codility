@@ -25,4 +25,9 @@ class CodilityLesson3Test: XCTestCase {
         XCTAssertEqual(self.frogJumps(initialPos: 999999999, targetPos: 1000000000, jumpDistance: 1), 1)
         XCTAssertEqual(self.frogJumps(initialPos: 10, targetPos: 120, jumpDistance: 10), 11)
     }
+    
+    func testMissingElement() {
+        XCTAssertEqual([2, 3, 1, 5].arrayMissingElement(), 4)
+        XCTAssertEqual([2, 3, 1, 5, 6, 7, 4].arrayMissingElement(), 8)
+    }
 }
