@@ -37,4 +37,29 @@ extension Array where Element == Int {
         
         return difference
     }
+    
+    public func arrayFrogCanCross(to: Int) -> Int {
+        guard self.count > 0 else {
+            return -1
+        }
+        
+        var roadSet = Set<Int>()
+        var time = 0
+        var roadMissedSteps = to
+        
+        for position in self {
+            if position <= to && !roadSet.contains(position) {
+                roadSet.insert(position)
+                roadMissedSteps -= 1
+            }
+            
+            if roadMissedSteps == 0 {
+                return time
+            }
+            
+            time += 1
+        }
+        
+        return -1
+    }
 }
