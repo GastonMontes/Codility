@@ -30,4 +30,11 @@ class CodilityLesson3Test: XCTestCase {
         XCTAssertEqual([2, 3, 1, 5].arrayMissingElement(), 4)
         XCTAssertEqual([2, 3, 1, 5, 6, 7, 4].arrayMissingElement(), 8)
     }
+    
+    func testSplittedPartsValue() {
+        XCTAssertEqual([-10, -20, -30, -40, 100].arrayMinDifferenceOfSplit(), 20)
+        XCTAssertEqual([3, 1, 2, 4, 3].arrayMinDifferenceOfSplit(), 1)
+        XCTAssertEqual([-5, 8].arrayMinDifferenceOfSplit(), 13)
+        XCTAssertEqual([8, 9, 5, 3, 4, 2].arrayMinDifferenceOfSplit(), 3)
+    }
 }
