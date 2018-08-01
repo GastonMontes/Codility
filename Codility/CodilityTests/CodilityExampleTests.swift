@@ -30,6 +30,49 @@ class CodilityExampleTests: XCTestCase {
         XCTAssertTrue(areParenthesesCorrectlyNested("Texto de prueba (Para Codility) que me permite testear los parentesis de la oracion (No sirve de mucho que digamos)"))
     }
     
+    func testBalancedBrakets() {
+        let string1 = "{[()]}"
+        let string2 = "{[(])}"
+        let string3 = "{{[[(())]]}}"
+        
+        print("Balance 1")
+        let balanced1 = areBraketsBalanced(inputArray: [string1, string2, string3])
+        XCTAssertTrue(balanced1[0])
+        XCTAssertFalse(balanced1[1])
+        XCTAssertTrue(balanced1[2])
+        
+        print("Balance 2")
+        let balanced2 = areBraketsBalanced(inputArray: [string3, string1, string2, string2])
+        XCTAssertTrue(balanced2[0])
+        XCTAssertTrue(balanced2[1])
+        XCTAssertFalse(balanced2[2])
+        XCTAssertFalse(balanced2[3])
+        
+        print("Balance 3")
+        let balanced3 = areBraketsBalanced(inputArray: [string2, string3, string1])
+        XCTAssertFalse(balanced3[0])
+        XCTAssertTrue(balanced3[1])
+        XCTAssertTrue(balanced3[2])
+        
+        print("Balance 4")
+        let balanced4 = areBraketsBalanced(inputArray: [string1, string3, string2])
+        XCTAssertTrue(balanced4[0])
+        XCTAssertTrue(balanced4[1])
+        XCTAssertFalse(balanced4[2])
+        
+        print("Balance 5")
+        let balanced5 = areBraketsBalanced(inputArray: [string2, string1, string3])
+        XCTAssertFalse(balanced5[0])
+        XCTAssertTrue(balanced5[1])
+        XCTAssertTrue(balanced5[2])
+        
+        print("Balance 6")
+        let balanced6 = areBraketsBalanced(inputArray: [string3, string2, string1])
+        XCTAssertTrue(balanced6[0])
+        XCTAssertFalse(balanced6[1])
+        XCTAssertTrue(balanced6[2])
+    }
+    
     func testMinPositiveIntegerNotIncludeInList() {
         XCTAssertEqual(minPositiveIntegerNotIncludedIn(integersList: [200, 300, 3400, -34324, -3244, 2, 3, 4]), 1)
         XCTAssertEqual(minPositiveIntegerNotIncludedIn(integersList: [1, 6, 3, 9, 4, 6, 1, 3, 6, 4, 1, 2, -1, -3, 1, 2, 3]), 5)

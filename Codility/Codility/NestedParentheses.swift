@@ -28,3 +28,39 @@ public func areParenthesesCorrectlyNested(_ string: String) -> Bool {
     
     return (parenthesesCount == 0)
 }
+
+public func areBraketsBalanced(inputArray: [String]) -> [Bool] {
+    var balanced = [Bool]()
+    
+    for braketsString in inputArray {
+        var newString = braketsString
+        var stringBalanced = true
+        
+        if newString.count % 2 != 0 {
+            balanced.append(false)
+            break
+        }
+        
+        while newString.count > 0 {
+            let firstCharacter = newString.first!
+            let lastCharacter = newString.last!
+            
+            if firstCharacter == "}" || firstCharacter == "]" || firstCharacter == ")" {
+                stringBalanced = false
+                break
+            } else if firstCharacter == "{" && lastCharacter != "}" ||
+                firstCharacter == "[" && lastCharacter != "]" ||
+                firstCharacter == "(" && lastCharacter != ")" {
+                stringBalanced = false
+                break
+            }
+            
+            newString.removeFirst()
+            newString.removeLast()
+        }
+        
+        balanced.append(stringBalanced)
+    }
+    
+    return balanced
+}
