@@ -15,7 +15,7 @@ import UIKit
 //fizzBuzz(n: 15)
 
 // #############################################################################################################################################################
-// # ------------------------------------------------------------------------ Chapter 1 -----------------------------------------------------------------------#
+// # ------------------------------------------------------------------------ Lesson 1 ------------------------------------------------------------------------#
 // #############################################################################################################################################################
 
 // ------------------------------------------------------------------------ Binary Gap -------------------------------------------------------------------------
@@ -52,7 +52,7 @@ import UIKit
 //print(solution(1041)) // -> 5.
 
 // #############################################################################################################################################################
-// # ------------------------------------------------------------------------ Chapter 2 -----------------------------------------------------------------------#
+// # ------------------------------------------------------------------------ Lesson 2 ------------------------------------------------------------------------#
 // #############################################################################################################################################################
 
 // --------------------------------------------------------------------- Cyclic Rotation -----------------------------------------------------------------------
@@ -91,30 +91,30 @@ import UIKit
 //print(solution(&bigRotationList, 17)) // -> [7, 6, 3, 8, 9]
 
 // ---------------------------------------------------------------- Odds Occurrences In Array ------------------------------------------------------------------
-public func solution(_ A : inout [Int]) -> Int {
-    guard A.count > 1 else {
-        return A.first!
-    }
-
-    let arrayToDictiornary = A.reduce(into: [Int: Int]()) { $0[$1] = ($0[$1] != nil) ? $0[$1]! + 1 : 1 }
-    
-    return arrayToDictiornary.reduce(A.first!) { (result, tupleOfKeyAndValue) in
-        return (tupleOfKeyAndValue.value % 2 != 0) ? tupleOfKeyAndValue.key : result
-    }
-}
-
-var firstList = [9, 3, 9, 3, 9, 7, 9]
-var secondList = [1, 2, 3, 4, 5, 4, 3, 2, 1]
-var thirdList = [1, 2, 1]
-var fourthList = [0, 5, 0, 5, 4]
-var zerosList = [0, 0, 0]
-var equalsList = [3, 3, 3]
-var just1Element = [9]
-
-print(solution(&firstList)) // -> 7.
-print(solution(&secondList)) // -> 5.
-print(solution(&thirdList)) // -> 2.
-print(solution(&fourthList)) // -> 4.
-print(solution(&zerosList)) // -> 0.
-print(solution(&equalsList)) // -> 3.
-print(solution(&just1Element)) // -> 9.
+//public func solution(_ A : inout [Int]) -> Int {
+//    guard A.count > 1 else {
+//        return A.first!
+//    }
+//
+//    let arrayToDictiornary = A.reduce(into: [Int: Int]()) { $0[$1] = ($0[$1] != nil) ? $0[$1]! + 1 : 1 }
+//    
+//    return arrayToDictiornary.reduce(A.first!) { (result, tupleOfKeyAndValue) in
+//        return (tupleOfKeyAndValue.value % 2 != 0) ? tupleOfKeyAndValue.key : result
+//    }
+//}
+//
+//var firstList = [9, 3, 9, 3, 9, 7, 9]
+//var secondList = [1, 2, 3, 4, 5, 4, 3, 2, 1]
+//var thirdList = [1, 2, 1]
+//var fourthList = [0, 5, 0, 5, 4]
+//var zerosList = [0, 0, 0]
+//var equalsList = [3, 3, 3]
+//var just1Element = [9]
+//
+//print(solution(&firstList)) // -> 7.
+//print(solution(&secondList)) // -> 5.
+//print(solution(&thirdList)) // -> 2.
+//print(solution(&fourthList)) // -> 4.
+//print(solution(&zerosList)) // -> 0.
+//print(solution(&equalsList)) // -> 3.
+//print(solution(&just1Element)) // -> 9.
