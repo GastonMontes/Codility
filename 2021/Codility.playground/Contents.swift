@@ -1,5 +1,44 @@
 import UIKit
 
+// ---------------------------------------------------------------------- Rappi Exercise -----------------------------------------------------------------------
+//func factorial(n: Int) -> Int {
+//    return (n <= 1) ? 1 : n * factorial(n: n - 1)
+//}
+//
+//func calculateTeams(totalPlayers: Int, minNumberOfPlayer: Int) -> Int {
+//    return factorial(n: totalPlayers) / (factorial(n: totalPlayers - minNumberOfPlayer) * factorial(n: minNumberOfPlayer))
+//}
+//
+//func countTeams(skills: [Int], minPlayers: Int, minLevel: Int, maxLevel: Int) -> Int {
+//    guard skills.count > 0 else {
+//        return 0
+//    }
+//
+//    let numberOfPlayers = skills.filter({ $0 >= minLevel && $0 <= maxLevel }).count
+//
+//    if numberOfPlayers < minPlayers {
+//        return 0
+//    }
+//
+//    if numberOfPlayers == minPlayers {
+//        return 1
+//    }
+//
+//    var numberOfTeams = calculateTeams(totalPlayers: numberOfPlayers, minNumberOfPlayer: minPlayers)
+//
+//    for minNumOfPlayers in minPlayers + 1...numberOfPlayers {
+//        numberOfTeams += calculateTeams(totalPlayers: numberOfPlayers, minNumberOfPlayer: minNumOfPlayers)
+//    }
+//
+//    return numberOfTeams
+//}
+//
+//let skills = [12, 4, 6, 13, 5, 10]
+//let skills2 = [4, 4, 8, 5, 6, 1, 5, 7]
+//
+//countTeams(skills: skills, minPlayers: 3, minLevel: 4, maxLevel: 10) // -> 5.
+//countTeams(skills: skills2, minPlayers: 3, minLevel: 4, maxLevel: 10) // -> 3.
+
 // --------------------------------------------------------------------- FizzBuzz example ----------------------------------------------------------------------
 //func fizzBuzz(n: Int) -> Void {
 //    var fizzBuzzList = ["1", "Fizz", "Buzz", "FizzBuzz"]
@@ -11,7 +50,7 @@ import UIKit
 //        print(fizzBuzzList[listIndex])
 //    }
 //}
-//
+
 //fizzBuzz(n: 15)
 
 // #############################################################################################################################################################
@@ -160,7 +199,7 @@ import UIKit
 //    var leftSum = A.first!
 //    var rightSum = A.reduce(0, +) - leftSum
 //    var minDifference = abs(leftSum - rightSum)
-//    
+//
 //    for index in 1...A.count - 2 {
 //        let currentElement = A[index]
 //        leftSum += currentElement
@@ -179,3 +218,118 @@ import UIKit
 //
 //var intList = [3, 1, 2, 4, 3]
 //print(solution(&intList)) // -> 1.
+
+// #############################################################################################################################################################
+// # ------------------------------------------------------------------------ Lesson 4 ------------------------------------------------------------------------#
+// # ------------------------------------------------------------------- Counting Elements --------------------------------------------------------------------#
+// #############################################################################################################################################################
+
+// ---------------------------------------------------------------------- Frog River One -----------------------------------------------------------------------
+//public func solution(_ X : Int, _ A : inout [Int]) -> Int {
+//    guard A.count >= X else {
+//        return -1
+//    }
+//
+//    var stepsDone = Set<Int>()
+//    var time = 0
+//
+//    for step in A {
+//        if step <= X {
+//            stepsDone.insert(step)
+//
+//            if stepsDone.count == X {
+//                return time
+//            }
+//        }
+//
+//        time += 1
+//    }
+//
+//    return -1
+//}
+//
+//var intList = [1, 3, 1, 4, 2, 3, 5, 4]
+//print(solution(5, &intList)) // -> 6.
+
+// ----------------------------------------------------------------------- Max Counters ------------------------------------------------------------------------
+//public func solution(_ N : Int, _ A : inout [Int]) -> [Int] {
+//    var counters = [Int](repeating: 0, count: N)
+//    var maxCounterValue = 0
+//    var minCounterValue = 0
+//
+//    for integer in A {
+//        if integer >= 1 && integer <= N {
+//            var currentCounter = counters[integer - 1]
+//
+//            if currentCounter < minCounterValue {
+//                currentCounter = minCounterValue
+//            }
+//
+//            currentCounter += 1
+//            counters[integer - 1] = currentCounter
+//
+//            if currentCounter > maxCounterValue {
+//                maxCounterValue = currentCounter
+//            }
+//        } else {
+//            minCounterValue = maxCounterValue
+//        }
+//    }
+//
+//    return counters.map({ $0 > minCounterValue ? $0 : minCounterValue })
+//}
+//
+//var intList = [3, 4, 4, 6, 1, 4, 4]
+//print(solution(5, &intList)) // -> [3, 2, 2, 4, 2].
+
+// --------------------------------------------------------------------- Missing Integer -----------------------------------------------------------------------
+//public func solution(_ A : inout [Int]) -> Int {
+//    let newList = Array(Set(A.filter({ $0 > 0 }))).sorted()
+//    var minimumMissingInt = 1
+//
+//    for integer in newList {
+//        if integer == minimumMissingInt {
+//            minimumMissingInt += 1
+//        }
+//    }
+//
+//    return minimumMissingInt
+//}
+//
+//var intList = [1, 3, 6, 4, 1, 2]
+//var intList2 = [1, 2, 3]
+//var intList3 =  [-1, -3]
+//var intList4 =  [-1, -3, 1, 2]
+//var intList5 =  [1, 2, 3, 4, 5]
+//var intList6 = Array(-9999...9999)
+//var intList7 =  [1, 29, 332, 43, 51]
+//var intList8 =  [Int]()
+//
+//
+//print(solution(&intList)) // -> 5.
+//print(solution(&intList2)) // -> 4.
+//print(solution(&intList3)) // -> 1.
+//print(solution(&intList4)) // -> 3.
+//print(solution(&intList5)) // -> 6.
+//print(solution(&intList6)) // -> 10000.
+//print(solution(&intList7)) // -> 2.
+//print(solution(&intList8)) // -> 1.
+
+// ----------------------------------------------------------------------- Perm Check --------------------------------------------------------------------------
+//public func solution(_ A : inout [Int]) -> Int {
+//    let minValue = A.min()
+//    let maxValue = A.max()
+//    let listOfSet = Array(Set(A))
+//    
+//    if minValue == 1 && maxValue == A.count && listOfSet.count == A.count {
+//        return 1
+//    }
+//    
+//    return 0
+//}
+//
+//var intList = [4, 1, 3, 2]
+//var intList2 = [4, 1, 3]
+//
+//print(solution(&intList)) // -> 1.
+//print(solution(&intList2)) // -> 0.
